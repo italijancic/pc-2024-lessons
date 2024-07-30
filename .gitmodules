@@ -1,0 +1,4 @@
+[submodule "lessons"]
+	branch = main
+[submodule "template"]
+	branch = main
