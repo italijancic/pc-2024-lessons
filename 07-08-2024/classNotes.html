@@ -1,0 +1,361 @@
+<!DOCTYPE html><html><head>
+      <title>classNotes</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/italijancic/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.13/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="-07-08-2024-class-notes">📋 07-08-2024: Class Notes </h1>
+<p>Autor: Ivan Talijancic</p>
+<h2 id="introducción-a-la-programación-y-herramientas">Introducción a la Programación y Herramientas </h2>
+<h3 id="conceptos-elementales-de-la-informática">Conceptos Elementales de la Informática </h3>
+<h4 id="hardware">Hardware </h4>
+<h5 id="componentes-físicos-de-una-computadora">Componentes Físicos de una Computadora </h5>
+<p><strong>CPU (Unidad Central de Procesamiento)</strong></p>
+<ul>
+<li><strong>Descripción</strong>: Es el cerebro de la computadora, responsable de ejecutar instrucciones de programas y procesar datos.</li>
+<li><strong>Componentes</strong>:
+<ul>
+<li><strong>Unidad de Control (CU)</strong>: Dirige las operaciones de la CPU, diciéndole a las otras partes de la computadora qué hacer.</li>
+<li><strong>Unidad Aritmética y Lógica (ALU)</strong>: Realiza operaciones aritméticas y lógicas.</li>
+</ul>
+</li>
+<li><strong>Interacción</strong>: La CPU se comunica con la memoria para obtener datos e instrucciones y con los dispositivos de entrada/salida para interactuar con el usuario.</li>
+</ul>
+<p><strong>Memoria</strong></p>
+<ul>
+<li><strong>RAM (Memoria de Acceso Aleatorio)</strong>:
+<ul>
+<li><strong>Descripción</strong>: Memoria volátil que almacena datos e instrucciones temporales que la CPU necesita.</li>
+<li><strong>Función</strong>: Permite el acceso rápido a los datos que se están utilizando actualmente.</li>
+</ul>
+</li>
+<li><strong>ROM (Memoria de Solo Lectura)</strong>:
+<ul>
+<li><strong>Descripción</strong>: Memoria no volátil que contiene instrucciones permanentes, como el firmware del sistema.</li>
+<li><strong>Función</strong>: Almacena el software esencial para el arranque de la computadora.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Disco Duro (HDD) / Unidad de Estado Sólido (SSD)</strong></p>
+<ul>
+<li><strong>Descripción</strong>: Dispositivos de almacenamiento de datos no volátiles.</li>
+<li><strong>Función</strong>: Almacenan el sistema operativo, aplicaciones y archivos de datos del usuario.</li>
+<li><strong>Interacción</strong>: La CPU lee y escribe datos en el disco duro/SSD a través del controlador de almacenamiento.</li>
+</ul>
+<p><strong>Placa Madre (Motherboard)</strong></p>
+<ul>
+<li><strong>Descripción</strong>: La placa principal de la computadora que conecta todos los componentes hardware.</li>
+<li><strong>Función</strong>: Proporciona conectividad entre la CPU, la memoria, los dispositivos de almacenamiento y otros componentes.</li>
+<li><strong>Interacción</strong>: Actúa como el centro de comunicación entre todos los componentes del sistema.</li>
+</ul>
+<p><strong>Tarjeta Gráfica (GPU)</strong></p>
+<ul>
+<li><strong>Descripción</strong>: Unidad de procesamiento dedicada a manejar y renderizar gráficos.</li>
+<li><strong>Función</strong>: Acelera el procesamiento de imágenes, videos y animaciones.</li>
+<li><strong>Interacción</strong>: Se comunica con la CPU y la memoria para procesar datos gráficos y enviar la salida a la pantalla.</li>
+</ul>
+<p><strong>Periféricos de Entrada y Salida</strong></p>
+<ul>
+<li><strong>Dispositivos de Entrada</strong>: Teclado, ratón, escáner, micrófono.</li>
+<li><strong>Dispositivos de Salida</strong>: Monitor, impresora, altavoces.</li>
+<li><strong>Interacción</strong>: Permiten al usuario interactuar con la computadora y recibir información de ella.</li>
+</ul>
+<h4 id="funciones-de-cada-componente-y-cómo-interactúan-entre-sí">Funciones de Cada Componente y Cómo Interactúan Entre Sí </h4>
+<ul>
+<li><strong>CPU y Memoria</strong>: La CPU lee datos e instrucciones desde la memoria RAM para procesarlos. La RAM proporciona un acceso rápido a estos datos temporales.</li>
+<li><strong>CPU y Disco Duro/SSD</strong>: La CPU solicita datos del disco duro/SSD cuando no están presentes en la RAM. Estos datos pueden ser programas, archivos o datos necesarios para las operaciones.</li>
+<li><strong>Placa Madre</strong>: Facilita la comunicación entre la CPU, la memoria, el disco duro/SSD, y otros componentes a través de buses y circuitos integrados.</li>
+<li><strong>CPU y GPU</strong>: La CPU delega tareas gráficas a la GPU para mejorar el rendimiento en aplicaciones que requieren procesamiento gráfico intensivo.</li>
+<li><strong>Periféricos de Entrada/Salida y CPU</strong>: Los dispositivos de entrada envían datos a la CPU para su procesamiento, y los dispositivos de salida muestran los resultados procesados por la CPU.</li>
+</ul>
+<h4 id="software">Software </h4>
+<h5 id="sistema-operativo-os">Sistema Operativo (OS) </h5>
+<ul>
+<li><strong>Descripción</strong>: Un conjunto de programas que administra los recursos de hardware de la computadora y proporciona servicios comunes a los programas de aplicación.</li>
+<li><strong>Funciones Principales</strong>:
+<ul>
+<li><strong>Gestión de Procesos</strong>: Administra la ejecución de múltiples procesos, asegurando que cada uno reciba tiempo de CPU.</li>
+<li><strong>Gestión de Memoria</strong>: Controla la asignación y liberación de memoria a los programas.</li>
+<li><strong>Gestión de Archivos</strong>: Maneja la creación, lectura, escritura y borrado de archivos en los dispositivos de almacenamiento.</li>
+<li><strong>Gestión de Dispositivos</strong>: Coordina la comunicación entre la CPU y los dispositivos periféricos.</li>
+</ul>
+</li>
+<li><strong>Ejemplos de OS</strong>: Windows, macOS, Linux, Android, iOS.</li>
+</ul>
+<h5 id="software-de-control-drivers">Software de Control (Drivers) </h5>
+<ul>
+<li><strong>Descripción</strong>: Programas que permiten que el sistema operativo se comunique con el hardware.</li>
+<li><strong>Funciones</strong>:
+<ul>
+<li><strong>Interfaz entre OS y Hardware</strong>: Traduce las instrucciones del sistema operativo en comandos que el hardware puede entender.</li>
+<li><strong>Compatibilidad</strong>: Permite que diferentes tipos de hardware funcionen con el mismo sistema operativo.</li>
+</ul>
+</li>
+<li><strong>Ejemplo</strong>: Un driver de impresora permite que la computadora envíe datos a la impresora en un formato que la impresora puede procesar.</li>
+</ul>
+<h5 id="software-de-aplicación">Software de Aplicación </h5>
+<ul>
+<li><strong>Descripción</strong>: Programas diseñados para realizar tareas específicas para el usuario.</li>
+<li><strong>Tipos de Software de Aplicación</strong>:
+<ul>
+<li><strong>Procesadores de Texto</strong>: Software para crear y editar documentos de texto (ej., Microsoft Word, Google Docs).</li>
+<li><strong>Navegadores Web</strong>: Software para acceder y navegar por internet (ej., Google Chrome, Mozilla Firefox).</li>
+<li><strong>Software de Diseño Gráfico</strong>: Programas para crear y editar imágenes y gráficos (ej., Adobe Photoshop, CorelDRAW).</li>
+<li><strong>Software de Comunicación</strong>: Aplicaciones para enviar y recibir mensajes (ej., WhatsApp, Slack).</li>
+</ul>
+</li>
+<li><strong>Función</strong>: Facilitar tareas específicas y mejorar la productividad del usuario.</li>
+<li><strong>Interacción con el OS</strong>: Las aplicaciones se ejecutan sobre el sistema operativo, utilizando sus servicios para acceder a hardware, gestionar archivos y procesar datos.</li>
+</ul>
+<hr>
+<h3 id="instalación-de-nodejs-y-configuración-del-entorno-de-desarrollo">Instalación de Node.js y Configuración del Entorno de Desarrollo </h3>
+<ol>
+<li>
+<p><strong>Instalación de Node.js</strong></p>
+<ul>
+<li>Descargar Node.js desde el <a href="https://nodejs.org">sitio oficial</a>.</li>
+<li>Seguir las instrucciones de instalación para tu sistema operativo.</li>
+<li>Verificar la instalación abriendo una terminal y ejecutando el comando <code>node -v</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Configuración del Entorno de Desarrollo (Visual Studio Code)</strong></p>
+<ul>
+<li>Descargar Visual Studio Code desde el <a href="https://code.visualstudio.com">sitio oficial</a>.</li>
+<li>Instalar extensiones recomendadas para JavaScript y Node.js (ej., ESLint, Prettier).</li>
+<li>Configurar el editor para que se adapte a tus preferencias de desarrollo.</li>
+</ul>
+</li>
+</ol>
+<h3 id="introducción-a-la-línea-de-comandos-y-ejecución-de-scripts-en-nodejs">Introducción a la Línea de Comandos y Ejecución de Scripts en Node.js </h3>
+<ol>
+<li>
+<p><strong>Línea de Comandos</strong></p>
+<ul>
+<li>Navegar por el sistema de archivos usando comandos básicos (cd, ls, mkdir, etc.).</li>
+<li>Ejecutar scripts de Node.js desde la terminal.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ejecutar un Script en Node.js</strong></p>
+<ul>
+<li>Crear un archivo JavaScript simple (<code>hello.js</code>) y agregar el siguiente código:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Hello, world!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></li>
+<li>Ejecutar el script en la terminal con el comando:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">node</span> hello.js
+</code></pre></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="primeros-pasos-en-javascript">Primeros Pasos en JavaScript </h3>
+<h4 id="conceptos-básicos-de-programación">Conceptos Básicos de Programación </h4>
+<ol>
+<li>
+<p><strong>Variables</strong></p>
+<ul>
+<li>Declaración de variables usando <code>var</code>, <code>let</code>, y <code>const</code>.</li>
+<li>Ejemplo:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword keyword-let">let</span> nombre <span class="token operator">=</span> <span class="token string">'Juan'</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-const">const</span> edad <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-var">var</span> ciudad <span class="token operator">=</span> <span class="token string">'Buenos Aires'</span><span class="token punctuation">;</span>
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>Tipos de Datos</strong></p>
+<ul>
+<li>Primitivos: <code>number</code>, <code>string</code>, <code>boolean</code>, <code>null</code>, <code>undefined</code>.</li>
+<li>Ejemplo:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword keyword-let">let</span> numero <span class="token operator">=</span> <span class="token number">25</span><span class="token punctuation">;</span>        <span class="token comment">// number</span>
+<span class="token keyword keyword-let">let</span> mensaje <span class="token operator">=</span> <span class="token string">'Hola'</span><span class="token punctuation">;</span>   <span class="token comment">// string</span>
+<span class="token keyword keyword-let">let</span> esVerdadero <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// boolean</span>
+<span class="token keyword keyword-let">let</span> valorNulo <span class="token operator">=</span> <span class="token keyword null nil keyword-null">null</span><span class="token punctuation">;</span>   <span class="token comment">// null</span>
+<span class="token keyword keyword-let">let</span> sinDefinir<span class="token punctuation">;</span>         <span class="token comment">// undefined</span>
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>Operadores</strong></p>
+<ul>
+<li>Aritméticos: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>.</li>
+<li>De comparación: <code>==</code>, <code>===</code>, <code>!=</code>, <code>!==</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>.</li>
+<li>Lógicos: <code>&amp;&amp;</code>, <code>||</code>, <code>!</code>.</li>
+<li>Ejemplo:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword keyword-let">let</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-let">let</span> b <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 15</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>a <span class="token operator">&gt;</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>a <span class="token operator">&amp;&amp;</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true (ambos son verdaderos)</span>
+</code></pre></li>
+</ul>
+</li>
+</ol>
+<h4 id="ejemplos-y-ejercicios-prácticos-simples">Ejemplos y Ejercicios Prácticos Simples </h4>
+<ol>
+<li>
+<p><strong>Cálculos Matemáticos Básicos</strong></p>
+<ul>
+<li>Escribir un script que sume, reste, multiplique y divida dos números.</li>
+<li>Ejemplo:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword keyword-let">let</span> num1 <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-let">let</span> num2 <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Suma:'</span><span class="token punctuation">,</span> num1 <span class="token operator">+</span> num2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Resta:'</span><span class="token punctuation">,</span> num1 <span class="token operator">-</span> num2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Multiplicación:'</span><span class="token punctuation">,</span> num1 <span class="token operator">*</span> num2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'División:'</span><span class="token punctuation">,</span> num1 <span class="token operator">/</span> num2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>Ejercicios Prácticos</strong></p>
+<ul>
+<li>Ejercicio 1: Declarar dos variables numéricas y mostrar su suma, resta, multiplicación y división.</li>
+<li>Ejercicio 2: Crear un script que determine si un número es par o impar.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="estructuras-de-control">Estructuras de Control </h3>
+<h4 id="sentencias-condicionales">Sentencias Condicionales </h4>
+<h4 id="introducción-a-las-sentencias-if-else-if-else">Introducción a las Sentencias <code>if</code>, <code>else if</code>, <code>else</code> </h4>
+<ol>
+<li>
+<p><strong>Sintaxis Básica</strong></p>
+<ul>
+<li><code>if</code>:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword control-flow keyword-if">if</span> <span class="token punctuation">(</span>condición<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// código a ejecutar si la condición es verdadera</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li><code>else if</code> y <code>else</code>:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword control-flow keyword-if">if</span> <span class="token punctuation">(</span>condición1<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// código a ejecutar si condición1 es verdadera</span>
+<span class="token punctuation">}</span> <span class="token keyword control-flow keyword-else">else</span> <span class="token keyword control-flow keyword-if">if</span> <span class="token punctuation">(</span>condición2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// código a ejecutar si condición2 es verdadera</span>
+<span class="token punctuation">}</span> <span class="token keyword control-flow keyword-else">else</span> <span class="token punctuation">{</span>
+  <span class="token comment">// código a ejecutar si ninguna de las condiciones anteriores es verdadera</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>Ejemplo</strong></p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword keyword-let">let</span> edad <span class="token operator">=</span> <span class="token number">18</span><span class="token punctuation">;</span>
+<span class="token keyword control-flow keyword-if">if</span> <span class="token punctuation">(</span>edad <span class="token operator">&lt;</span> <span class="token number">18</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Menor de edad'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword control-flow keyword-else">else</span> <span class="token keyword control-flow keyword-if">if</span> <span class="token punctuation">(</span>edad <span class="token operator">===</span> <span class="token number">18</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Exactamente 18 años'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword control-flow keyword-else">else</span> <span class="token punctuation">{</span>
+  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Mayor de edad'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+</ol>
+<h4 id="ejercicios-prácticos">Ejercicios Prácticos </h4>
+<ol>
+<li>
+<p><strong>Ejercicio 1</strong></p>
+<ul>
+<li>Escribir un script que determine si una persona es mayor de edad (18 años o más).</li>
+</ul>
+</li>
+<li>
+<p><strong>Ejercicio 2</strong></p>
+<ul>
+<li>Escribir un script que evalúe tres notas y determine si un estudiante aprueba (promedio ≥ 6) o reprueba.</li>
+</ul>
+</li>
+</ol>
+<h3 id="4-sentencias-de-repetición-bucles">4. Sentencias de Repetición (Bucles) </h3>
+<h4 id="introducción-a-los-bucles-for-while-y-do-while">Introducción a los Bucles <code>for</code>, <code>while</code>, y <code>do while</code> </h4>
+<ol>
+<li>
+<p><strong>Bucle <code>for</code></strong></p>
+<ul>
+<li>Sintaxis:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword control-flow keyword-for">for</span> <span class="token punctuation">(</span>inicialización<span class="token punctuation">;</span> condición<span class="token punctuation">;</span> incremento<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// código a ejecutar en cada iteración</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li>Ejemplo:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword control-flow keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-let">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>Bucle <code>while</code></strong></p>
+<ul>
+<li>Sintaxis:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword control-flow keyword-while">while</span> <span class="token punctuation">(</span>condición<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// código a ejecutar mientras la condición sea verdadera</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li>Ejemplo:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword keyword-let">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword control-flow keyword-while">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  i<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>Bucle <code>do while</code></strong></p>
+<ul>
+<li>Sintaxis:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword control-flow keyword-do">do</span> <span class="token punctuation">{</span>
+  <span class="token comment">// código a ejecutar</span>
+<span class="token punctuation">}</span> <span class="token keyword control-flow keyword-while">while</span> <span class="token punctuation">(</span>condición<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></li>
+<li>Ejemplo:<pre data-role="codeBlock" data-info="javascript" class="language-javascript javascript"><code><span class="token keyword keyword-let">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword control-flow keyword-do">do</span> <span class="token punctuation">{</span>
+  <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  i<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword control-flow keyword-while">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></li>
+</ul>
+</li>
+</ol>
+<h4 id="ejercicios-prácticos-1">Ejercicios Prácticos </h4>
+<ol>
+<li>
+<p><strong>Ejercicio 1</strong></p>
+<ul>
+<li>Escribir un script que imprima los números del 1 al 10 utilizando un bucle <code>for</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ejercicio 2</strong></p>
+<ul>
+<li>Escribir un script que imprima los números del 1 al 10 utilizando un bucle <code>while</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ejercicio 3</strong></p>
+<ul>
+<li>Escribir un script que imprima los números del 1 al 10 utilizando un bucle <code>do while</code>.</li>
+</ul>
+</li>
+</ol>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
