@@ -19,21 +19,6 @@ Ingrese un número: 5
 El número es positivo.
 ```
 
-<!-- **Código Inicial:**
-```js
-import { prompt } from './prompt.js';
-
-const numero = parseInt(prompt('Ingrese un número: '));
-
-if (numero > 0) {
-    console.log('El número es positivo.');
-} else if (numero < 0) {
-    console.log('El número es negativo.');
-} else {
-    console.log('El número es cero.');
-}
-``` -->
-
 #### **Problema 2: Determinación de Paridad**
 
 **Descripción:** Escribe un programa que pida al usuario un número `entero` y determine si es **par** o **impar**.
@@ -48,19 +33,6 @@ Ingrese un número: 4
 El número es par.
 ```
 
-<!-- **Código Inicial:**
-```js
-import { prompt } from './prompt.js';
-
-const numero = parseInt(prompt('Ingrese un número: '));
-
-if (numero % 2 === 0) {
-    console.log('El número es par.');
-} else {
-    console.log('El número es impar.');
-}
-``` -->
-
 #### **Problema 3: Evaluación de Calificaciones**
 
 **Descripción:** Escribe un programa que pida al usuario una `calificación numérica (0-100)` y determine si la calificación es `"Aprobado" (60 o más)` o `"Reprobado" (menos de 60)`.
@@ -74,20 +46,6 @@ Ingrese su calificación: 75
 ```zsh
 Aprobado.
 ```
-
-<!-- **Código Inicial:**
-```js
-import { prompt } from './prompt.js';
-
-const calificacion = parseInt(prompt('Ingrese su calificación (0-100): '));
-
-if (calificacion >= 60) {
-    console.log('Aprobado.');
-} else {
-    console.log('Reprobado.');
-}
-``` -->
-
 #### **Problema 4: Comparación de Tres Números**
 
 **Descripción:** Escribe un programa que pida al usuario tres números enteros y determine cuál es el mayor.
@@ -104,27 +62,6 @@ Ingrese el tercer número: 8
 El número mayor es: 8
 ```
 
-<!-- **Código Inicial:**
-```js
-import { prompt } from './prompt.js';
-
-const num1 = parseInt(prompt('Ingrese el primer número: '));
-const num2 = parseInt(prompt('Ingrese el segundo número: '));
-const num3 = parseInt(prompt('Ingrese el tercer número: '));
-
-let mayor = num1;
-
-if (num2 > mayor) {
-    mayor = num2;
-}
-
-if (num3 > mayor) {
-    mayor = num3;
-}
-
-console.log(`El número mayor es: ${mayor}`);
-``` -->
-
 #### **Problema 5: Cálculo de Descuento**
 
 **Descripción:** Escribe un programa que pida al usuario el precio de un producto y la cantidad que desea comprar. Si la cantidad es `3 o más`, aplica un descuento del 10% al precio total.
@@ -139,22 +76,6 @@ Ingrese la cantidad que desea comprar: 3
 ```zsh
 El precio total con descuento es: 270
 ```
-
-<!-- **Código Inicial:**
-```js
-import { prompt } from './prompt.js';
-
-const precio = parseFloat(prompt('Ingrese el precio del producto: '));
-const cantidad = parseInt(prompt('Ingrese la cantidad que desea comprar: '));
-
-let total = precio * cantidad;
-
-if (cantidad >= 3) {
-    total = total * 0.9; // Aplica un 10% de descuento
-}
-
-console.log(`El precio total con descuento es: ${total}`);
-``` -->
 
 ### **Problema 6: Descuento mejorado**
 
@@ -181,23 +102,6 @@ Ingrese la cantidad que desea comprar: 2
 ```zsh
 No aplica promoción. El precio total es: 200
 ```
-
-<!-- ### **Código Inicial:**
-```js
-import { prompt } from './prompt.js';
-
-const precio = parseFloat(prompt('Ingrese el precio del producto: '));
-const cantidad = parseInt(prompt('Ingrese la cantidad que desea comprar: '));
-
-let total = precio * cantidad;
-
-if (cantidad >= 3) {
-    total = total * 0.9; // Aplica un 10% de descuento
-    console.log(`El precio total con descuento es: ${total}`);
-} else {
-    console.log(`No aplica promoción. El precio total es: ${total}`);
-}
-``` -->
 
 Claro, aquí tienes el **Problema 6** modificado para incluir el uso de `else if` en la lógica del cálculo del descuento:
 
@@ -240,24 +144,3 @@ Ingrese la cantidad que desea comprar: 1
 ```zsh
 No aplica promoción. El precio total es: 100
 ```
-
-<!-- ### **Código Inicial:**
-
-```js
-import { prompt } from './prompt.js';
-
-const precio = parseFloat(prompt('Ingrese el precio del producto: '));
-const cantidad = parseInt(prompt('Ingrese la cantidad que desea comprar: '));
-
-let total = precio * cantidad;
-
-if (cantidad >= 3) {
-    total = total * 0.9; // Aplica un 10% de descuento
-    console.log(`El precio total con descuento es: ${total}`);
-} else if (cantidad === 2) {
-    total = total * 0.95; // Aplica un 5% de descuento
-    console.log(`El precio total con descuento es: ${total}`);
-} else {
-    console.log(`No aplica promoción. El precio total es: ${total}`);
-}
-``` -->
