@@ -1,6 +1,6 @@
 # 📋 28-08-2024: Class Notes
 Autor: Ivan Talijancic
-
+// ya tenemos los dos primeros números
 ## Introducción a la Programación
 
 ### 4. Sentencias de Repetición (Bucles)
