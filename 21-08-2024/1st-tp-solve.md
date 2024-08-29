@@ -19,7 +19,7 @@ Ingrese un número: 5
 El número es positivo.
 ```
 
-<!-- **Código Inicial:**
+**Código Inicial:**
 ```js
 import { prompt } from './prompt.js';
 
@@ -32,7 +32,7 @@ if (numero > 0) {
 } else {
     console.log('El número es cero.');
 }
-``` -->
+```
 
 #### **Problema 2: Determinación de Paridad**
 
@@ -48,7 +48,7 @@ Ingrese un número: 4
 El número es par.
 ```
 
-<!-- **Código Inicial:**
+**Código Inicial:**
 ```js
 import { prompt } from './prompt.js';
 
@@ -59,7 +59,7 @@ if (numero % 2 === 0) {
 } else {
     console.log('El número es impar.');
 }
-``` -->
+```
 
 #### **Problema 3: Evaluación de Calificaciones**
 
@@ -75,7 +75,7 @@ Ingrese su calificación: 75
 Aprobado.
 ```
 
-<!-- **Código Inicial:**
+**Código Inicial:**
 ```js
 import { prompt } from './prompt.js';
 
@@ -86,7 +86,7 @@ if (calificacion >= 60) {
 } else {
     console.log('Reprobado.');
 }
-``` -->
+```
 
 #### **Problema 4: Comparación de Tres Números**
 
@@ -104,7 +104,7 @@ Ingrese el tercer número: 8
 El número mayor es: 8
 ```
 
-<!-- **Código Inicial:**
+**Código Inicial:**
 ```js
 import { prompt } from './prompt.js';
 
@@ -123,7 +123,7 @@ if (num3 > mayor) {
 }
 
 console.log(`El número mayor es: ${mayor}`);
-``` -->
+```
 
 #### **Problema 5: Cálculo de Descuento**
 
@@ -140,7 +140,7 @@ Ingrese la cantidad que desea comprar: 3
 El precio total con descuento es: 270
 ```
 
-<!-- **Código Inicial:**
+**Código Inicial:**
 ```js
 import { prompt } from './prompt.js';
 
@@ -154,7 +154,7 @@ if (cantidad >= 3) {
 }
 
 console.log(`El precio total con descuento es: ${total}`);
-``` -->
+```
 
 ### **Problema 6: Descuento mejorado**
 
@@ -182,7 +182,7 @@ Ingrese la cantidad que desea comprar: 2
 No aplica promoción. El precio total es: 200
 ```
 
-<!-- ### **Código Inicial:**
+### **Código Inicial:**
 ```js
 import { prompt } from './prompt.js';
 
@@ -197,7 +197,7 @@ if (cantidad >= 3) {
 } else {
     console.log(`No aplica promoción. El precio total es: ${total}`);
 }
-``` -->
+```
 
 Claro, aquí tienes el **Problema 6** modificado para incluir el uso de `else if` en la lógica del cálculo del descuento:
 
@@ -241,7 +241,7 @@ Ingrese la cantidad que desea comprar: 1
 No aplica promoción. El precio total es: 100
 ```
 
-<!-- ### **Código Inicial:**
+### **Código Inicial:**
 
 ```js
 import { prompt } from './prompt.js';
@@ -260,7 +260,7 @@ if (cantidad >= 3) {
 } else {
     console.log(`No aplica promoción. El precio total es: ${total}`);
 }
-``` -->
+```
 
 ### **Problema 8: Determinar si un número es primo**
 
@@ -286,7 +286,7 @@ Ingrese un número entero: 4
 El número ingresado no es primo
 ```
 
-<!-- ```js
+```js
 import { prompt } from './prompt.js'
 
 const isPrime = (num) => {
@@ -307,5 +307,5 @@ if (isPrime(n)) {
   console.log(`El número ingresado ${n}, es primo`)
 } else {
   console.log(`El número ingresado ${n}, no es primo`)
-} -->
+}
 ```
