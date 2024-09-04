@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "node --watch src/app.js",
     "examples": "node --watch src/examples.js",
+    "tp": "node --watch src/tp-2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "italijancic@comunidad.frrq.utn.edu.ar",
