@@ -156,3 +156,29 @@ Escribe un programa que encuentre el número más grande en un array llamado `nu
 let numeros = [15, 42, 7, 81, 23, 56];
 // Tu código aquí
 ```
+
+### Ejercicio 5: Ingreso de elementos por consola
+
+Escribe un programa que le permita al usuario ingresar la dimensión de un array a definir y luego le permita cargar los valores de a uno.
+
+Ejemplo de salida por consola conrrespondiente a una correcta ejecución:
+
+```zsh
+Ingrese la dimensión del vector a definir: 4
+
+Ingrese el valor entero correspondiente al índice 0: 1
+Ingrese el valor entero correspondiente al índice 1: 2
+Ingrese el valor entero correspondiente al índice 2: 3
+Ingrese el valor entero correspondiente al índice 3: 4
+
+El array ingresado es:
+
+┌─────────┬────────┐
+│ (index) │ Values │
+├─────────┼────────┤
+│ 0       │ 1      │
+│ 1       │ 2      │
+│ 2       │ 3      │
+│ 3       │ 4      │
+└─────────┴────────┘
+```
