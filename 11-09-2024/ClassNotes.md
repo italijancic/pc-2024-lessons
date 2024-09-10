@@ -129,7 +129,7 @@ A continuación, se presentan ejemplos de funciones que realizan operaciones con
  * @param {number} max - The maximum value for the random range.
  * @returns {number} A random integer between min and max (inclusive).
  */
-const rndInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const rndInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
 /**
  * Generates an array of random integers within a given range.
@@ -140,16 +140,16 @@ const rndInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
  * @returns {number[]} An array of random integers.
  */
 function generarVectorAleatorio(size, min, max) {
-    const vector = new Array(size); // Corrección: se agrega ';' al final de la línea.
+    const vector = new Array(size) // Corrección: se agrega ';' al final de la línea.
 
     for (let i = 0; i < size; i++) { // Corrección: se agregan ';' en el bucle 'for'.
-        vector[i] = rndInt(min, max);
+        vector[i] = rndInt(min, max)
     }
 
-    return vector;
+    return vector
 }
 
-console.log(generarVectorAleatorio(5, 1, 10)); // Ejemplo de salida: [3, 7, 2, 9, 5]
+console.log(generarVectorAleatorio(5, 1, 10)) // Ejemplo de salida: [3, 7, 2, 9, 5]
 ```
 
 #### Ejemplo/Problema 2: Generar un Vector de Números Pares
