@@ -1,40 +1,35 @@
 import { prompt } from './prompt.js'
 
 /**
- * Checks if a number is prime.
+ * Generates a random integer within a specified range [min, max].
  *
- * @param {number} num - The number to check.
- * @returns {boolean} True if the number is prime, false otherwise.
+ * @param {number} min - The minimum value for the random range.
+ * @param {number} max - The maximum value for the random range.
+ * @returns {number} A random integer between min and max (inclusive).
  */
-function esPrimo(num) {
-  if (num < 2) return false
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-      if (num % i === 0) return false
-  }
-  return true
-}
+const rndInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
 /**
-* Generates an array of prime numbers.
-*
-* @param {number} size - The size of the array to generate.
-* @returns {number[]} An array of prime numbers.
-*/
-function generarVectorPrimos(size) {
-  const vector = new Array(size)
-  let numero = 2
-  let index = 0
+ * Generates an array of random integers within a given range.
+ *
+ * @param {number} size - The size of the array to generate.
+ * @param {number} min - The minimum value for the random range.
+ * @param {number} max - The maximum value for the random range.
+ * @returns {number[]} An array of random integers.
+ */
+function generarVectorAleatorio(size, min, max) {
+    const vector = new Array(size) // Corrección: se agrega ';' al final de la línea.
 
-  while (index < size) {
-      if (esPrimo(numero)) {
-          vector[index] = numero
-          index++
-      }
-      numero++
-  }
+    for (let i = 0; i < size; i++) { // Corrección: se agregan ';' en el bucle 'for'.
+        vector[i] = rndInt(min, max)
+    }
 
-  return vector
+    return vector
 }
 
-console.log(generarVectorPrimos(5)) // Ejemplo de salida: [2, 3, 5, 7, 11]
+let size = parseInt(prompt('Ingrese la dimensión del vector a generar: '))
+let min = parseInt(prompt('Ingrese el valor mínimo del rango aleatorio: '))
+let max = parseInt(prompt('Ingrese el valor máximo del rango aleatorio: '))
+
+console.log(generarVectorAleatorio(size, min, max))
 
