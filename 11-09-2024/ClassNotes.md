@@ -140,9 +140,9 @@ const rndInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
  * @returns {number[]} An array of random integers.
  */
 function generarVectorAleatorio(size, min, max) {
-    const vector = new Array(size) // Corrección: se agrega ';' al final de la línea.
+    const vector = new Array(size)
 
-    for (let i = 0; i < size; i++) { // Corrección: se agregan ';' en el bucle 'for'.
+    for (let i = 0; i < size; i++) {
         vector[i] = rndInt(min, max)
     }
 
