@@ -165,8 +165,8 @@ Escriba un programa, con al menos una función (puede usar todas las que crea ne
 
 A continuación, se proponen algunos ejercicios para practicar:
 
-1. **Generar un Vector de Números Aleatorios No Repetidos en un Rango Dado**.
-2. **Crear una Función que Verifique si Todos los Elementos de un Vector Son Pares**.
-3. **Implementar una Función que Encuentre el Máximo y el Mínimo de un Vector**.
-4. **Desarrollar una Función que Invierta los Elementos de un Vector**.
-5. **Crear una Función que Elimine los Números Primos de un Vector Dado**.
+1. Generar un vector de números aleatorios **No Repetidos** en un rango dado.
+2. Crear una programa que verifique si **todos** los elementos de un vector pon **pares**.
+3. Implementar una programa que calcule el **Máximo**, el **Mínimo** y el promedio de un vector de `n-longitud` de elementos aleatorios.
+4. Desarrollar un programa que **invierta** los elementos de un vector.
+5. Implementar un programa que **elimine** los números **primos** de un vector Dado.
