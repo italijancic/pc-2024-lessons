@@ -1,5 +1,6 @@
 import { prompt } from './prompt.js'
 
+
 /**
  * Generates a random integer within a specified range [min, max].
  *

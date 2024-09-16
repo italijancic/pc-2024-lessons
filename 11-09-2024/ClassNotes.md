@@ -115,7 +115,58 @@ console.log(numeroAleatorio) // Ejemplo de salida: 7
 
 Cada vez que ejecutes este código, `numeroAleatorio` tendrá un valor aleatorio entre `1` y `10`, ambos incluidos.
 
-### 4. Ejemplos de Uso de Funciones en Problemas con Vectores
+### 4. Uso de `.slice()` para Evitar Errores por Referencia en Funciones que Trabajan con Arrays
+
+Cuando trabajamos con **arrays** en JavaScript, es importante recordar que los arrays son **objetos** y se pasan por **referencia** a las funciones. Esto significa que, si una función modifica un array, los cambios también afectarán al array original fuera de la función.
+
+Para evitar modificar el array original y trabajar con una **copia**, se puede utilizar el método `.slice()`. Este método genera una copia superficial de un array, asegurando que cualquier modificación dentro de la función no afecte el array original.
+
+#### Ejemplo:
+
+```js
+/**
+ * Duplicates each element in the array without modifying the original array.
+ *
+ * @param {Array<number>} arr - The original array of numbers.
+ * @returns {Array<number>} A new array with each element doubled.
+ */
+const duplicateValues = (arr) => {
+  // Crear una copia del array original usando .slice()
+  const result = arr.slice()
+
+  // Modificar la copia, no el array original
+  for (let i = 0; i < result.length; i++) {
+    result[i] *= 2
+  }
+
+  return result
+}
+
+const originalArray = [1, 2, 3, 4, 5]
+const doubledArray = douplicates(originalArray)
+
+console.log('Original Array:', originalArray) // [1, 2, 3, 4, 5]
+console.log('Doubled Array:', doubledArray)   // [2, 4, 6, 8, 10]
+```
+
+Como ejercicio intelectual, tome el programa anterior y elimine el `.slice()` para hacer la copia del array que se pasa como argumento de la función, corra el prorgama y analice las salidas de consola, para entender la variación en el comportamiento del algoritmo.
+
+#### 4.1 Explicación:
+
+- **Sin `.slice()`**, el array `originalArray` también se modificaría cuando cambiemos los valores en `result`, ya que ambos apuntarían al mismo espacio de memoria.
+- Al usar **`.slice()`**, creamos una copia del array original y trabajamos con esa copia, lo que permite **preservar** el contenido original del array.
+
+#### 4.2 Cuándo Utilizar `.slice()`
+
+Se recomienda usar `.slice()` siempre que:
+
+1. Una función que recibe un array **no debe modificar** el array original.
+2. Quieres retornar un array **modificado** sin afectar al array que pasaste como argumento.
+3. Quieres **evitar errores por referencia** al manipular arrays en múltiples partes del código.
+
+**Este uso es crucial cuando varias funciones trabajan con el mismo array y necesitas asegurarte de que el array original se mantenga intacto.**
+
+### 5. Ejemplos de Uso de Funciones en Problemas con Vectores
 
 A continuación, se presentan ejemplos de funciones que realizan operaciones con vectores, utilizando bucles `for`, `while`, y `do-while` en lugar de métodos avanzados de arrays.
 
@@ -146,22 +197,77 @@ function generarVectorAleatorio(size, min, max) {
         vector[i] = rndInt(min, max)
     }
 
-    return vector
+    // Return copy of result vector
+    return vector.slice()
 }
 
 console.log(generarVectorAleatorio(5, 1, 10)) // Ejemplo de salida: [3, 7, 2, 9, 5]
 ```
 
-#### Ejemplo/Problema 2: Generar un Vector de Números Pares
+#### Ejemplo/Problema 2: Generar un vector de números Pares
 Escriba un programa, con al menos una función (puede usar todas las que crea necesarias), para generar un vector de números pares
 
-#### Ejemplo/Problema 3: Generar un Vector de Números Impares
+#### Ejemplo/Problema 3: Generar un vector de números Impares
 Escriba un programa, con al menos una función (puede usar todas las que crea necesarias), para generar un vector de números impares
 
-#### Ejemplo 4/Problema: Generar un Vector de Números Primos
+#### Ejemplo 4/Problema: Generar un vector de números Primos
 Escriba un programa, con al menos una función (puede usar todas las que crea necesarias), para generar un vector de números primos
 
-### 4. Ejercicios de Programación Aplicando el Concepto de Función en Vectores
+#### Ejemplo 5/Problema: Generar un vector aleatorio de números pares
+Escriba un programa para generar un vector de números pares aleatorios. El usuario debe ser capaz de definir la cantidad de elementos a generar y el rango de definción de los mismos.
+
+```js
+import { prompt } from './prompt.js'
+
+/**
+ * Generates a random integer within a specified range [min, max].
+ *
+ * @param {number} min - The minimum value for the random range.
+ * @param {number} max - The maximum value for the random range.
+ * @returns {number} A random integer between min and max (inclusive).
+ */
+const rndInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+
+/**
+ * Checks if a number is even.
+ *
+ * @param {number} n - The number to check.
+ * @returns {boolean} True if the number is even, false otherwise.
+ */
+const isEven = (n) => n % 2 === 0
+
+/**
+ * Generates a random vector of even integers within a specified range [min, max].
+ *
+ * @param {number} size - The size of the random vector to generate.
+ * @param {number} min - The minimum value for the random range.
+ * @param {number} max - The maximum value for the random range.
+ * @returns {Array<number>} A vector of random even integers between min and max (inclusive).
+ */
+const generateEvenRndVector = (size, min, max) => {
+  const result = new Array(size)
+
+  for (let i = 0; i < size; i++) {
+    let number
+    // Keep generating numbers until an even one is found
+    do {
+      number = rndInt(min, max)
+    } while (!isEven(number))
+
+    result[i] = number
+  }
+
+  return result.slice()
+}
+
+let size = parseInt(prompt('Ingrese la cantidad de número aleatorios a generar: '))
+let min = parseInt(prompt('Ingrese el valor mínimo del rango: '))
+let max = parseInt(prompt('Ingrese el valor máximo del rango: '))
+
+console.log(generateEvenRndVector(size, min, max))
+```
+
+### 6. Ejercicios de Programación Aplicando el Concepto de Función en Vectores
 
 A continuación, se proponen algunos ejercicios para practicar:
 
