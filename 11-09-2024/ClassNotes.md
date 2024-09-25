@@ -272,7 +272,7 @@ console.log(generateEvenRndVector(size, min, max))
 A continuación, se proponen algunos ejercicios para practicar:
 
 1. Generar un vector de números aleatorios **No Repetidos** en un rango dado.
-2. Crear una programa que verifique si **todos** los elementos de un vector pon **pares**.
+2. Crear una programa que verifique si **todos** los elementos de un vector son **pares**.
 3. Implementar una programa que calcule el **Máximo**, el **Mínimo** y el promedio de un vector de `n-longitud` de elementos aleatorios.
 4. Desarrollar un programa que **invierta** los elementos de un vector.
 5. Implementar un programa que **elimine** los números **primos** de un vector Dado.
