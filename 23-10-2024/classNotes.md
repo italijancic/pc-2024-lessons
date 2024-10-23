@@ -194,7 +194,7 @@ Los arrays bidimensionales son útiles para **almacenar y manipular datos en for
 Es fundamental dominar su **declaración, inicialización, acceso y recorrido** utilizando bucles para realizar cálculos
 o transformaciones sobre ellos.
 
-#### 7. Ejercicios Prácticos
+### 7. Ejercicios Prácticos
 
 #### Ejercicio 1: Crear una Matriz de Números Enteros
 Escribe un programa que inicialice una función cargada con número aleatorios enteros.
