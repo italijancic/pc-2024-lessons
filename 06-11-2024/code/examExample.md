@@ -1,4 +1,4 @@
-## 2D Array Problema
+## 📋 2D Array Problema
 Autor: Talijancic, Ivan
 
 #### Problema 1
@@ -6,7 +6,7 @@ Suponga que usted es el estratega de un escuadron de aviones bombarderos y para 
 
 - Una **matriz de bombardeo** de `M-filas x N-columnas`, donde cada fila representa un avión en particular y cada columna un objetivo. El contenido de cada celda de esta matriz, **números enteros aleatorios entre 0 y 10** indica la cantidad de bombas a arrojar en el `n-ésimo objetivo`. Para la generación aleatoría de esta matriz de bombardeo, tenga en cuenta que si una celda tiene un 0, esto indica que la `m-ésima` avión pegó la vuelta en él `(n-ésimo - 1)` objetivo sin arrojar ninguna bomba desde el `n-ésimo` objetivo en adelante. Por ende las restantes celdas de esta fila deberán completarse con cero. Se presenta a continuación un ejemplo de como podría verse esta matriz:
 
-```bash
+```zsh
 ┌─────────┬────┬────┬───┬───┬───┬────┬───┬───┬────┬───┐
 │ (index) │ 0  │ 1  │ 2 │ 3 │ 4 │ 5  │ 6 │ 7 │ 8  │ 9 │
 ├─────────┼────┼────┼───┼───┼───┼────┼───┼───┼────┼───┤
@@ -25,7 +25,7 @@ Suponga que usted es el estratega de un escuadron de aviones bombarderos y para 
 
 - Un **vector de distancias** que indique las distancias desde la base al 1er objetivo y entre objetivos consecutivos. El vuelo de los aviones es siempre desde la base al 1er objetivo y de ahí al siguiente hasta que regrese a la base. Este vector de distancias contedrá **enteros positivos entre 200 y 1000 Kms**. Se presenta a continuación, un ejemplo de como podría verse este vector de distancias:
 
-```bash
+```zsh
 ┌─────────┬────────┐
 │ (index) │ Values │
 ├─────────┼────────┤
